@@ -17,12 +17,18 @@ btn.addEventListener("click", () => {
         window.alert("Nope! Try again!")
         decrement()
         changeText()
-    } else{
+    } else {
         window.alert("You're a genius! You won!")
         attempts.textContent = `Did you read my mind??!`
-    }
-} )
+    } 
 
+ if(countdown == 0){
+        attempts.textContent = "You Lost. Do better."
+        btn.style.display = "none";
+    }
+
+} )
+ 
 
 
 
